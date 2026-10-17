@@ -1,0 +1,80 @@
+{
+  "experiment_id": "TIFS_C4_SEMAPEFT_E5B_STABLE_CERTIFICATE_SYSTEMS_v1",
+  "targets": [
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "V08"
+  ],
+  "accepted_e3_state": {
+    "status": "E3_PARTIAL_GATE_FAILURE_CLOSED_UNCHANGED",
+    "PASS_E3_CORRECTNESS": false
+  },
+  "accepted_e5a_state": {
+    "status": "E5A_NUMERICAL_CLOSURE_PASS_DIAGNOSTIC_CLOSED",
+    "high_precision_failures": 0,
+    "units": 125
+  },
+  "profile": "P64",
+  "storage_input_dtype": "float32",
+  "compute_dtype": "float64",
+  "certificate_rel_tolerance": 1e-10,
+  "certificate_rel_tolerance_predeclared": true,
+  "device": "cuda:0",
+  "dimension_grid": [
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "rank_grid": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "module_count_grid": [
+    1,
+    8,
+    32,
+    128
+  ],
+  "module_count_setting": {
+    "d": 1024,
+    "r": 8
+  },
+  "process_seeds": [
+    11,
+    23,
+    47,
+    71,
+    89
+  ],
+  "warmups": 10,
+  "measured_iterations": 50,
+  "bootstrap_resamples": 10000,
+  "dense_stop": {
+    "measured_iteration_seconds": 30.0,
+    "estimated_dense_allocation_fraction_of_free": 0.7,
+    "oom": true
+  },
+  "timed_boundary": "frozen float32 factors already resident on GPU; start immediately before float32->float64 upcast; end after P64 certificate tensors are materialized; explicit synchronization around region",
+  "memory_boundary": "persistent float32 factors resident; after warmups/free transient tensors reset peak stats immediately before measured P64 regions; report measured peak separately from representation footprint",
+  "package_aggregation": "conceptual block-diagonal modules: Frobenius squares sum; spectral norm is max over modules",
+  "stage_a": {
+    "required_units": 125,
+    "all_must_pass": true,
+    "if_fail": "STOP_NO_STAGE_B"
+  },
+  "stage_b": {
+    "conditional_on": "PASS_E5B_A_CORRECTNESS",
+    "independent_process_measurements": true
+  },
+  "input_identity_reference": "frozen_reference/e5a_input_identity.csv",
+  "e3_reclassified": false,
+  "new_float32_threshold_selected": false,
+  "stop_after_e5b": true,
+  "later_stage_authorized": false
+}

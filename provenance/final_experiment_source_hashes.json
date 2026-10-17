@@ -1,0 +1,30 @@
+{
+  "runtime_loader_final": {
+    "sha256": "0c95e7f9bf83925641c2d58210ba0e25b0570de6ac4ea05610106e4c0d2aa0c8",
+    "source_file": "loader_lib.py"
+  },
+  "s06_loader_patch": {
+    "sha256": "c0ecfbfaf13c756749d1f6f4a97bdd87ddebdc026716a9445dd707895bf60b89",
+    "source_file": "loader_lib.py"
+  },
+  "e1_forward_patch": {
+    "sha256": "7495e9a247ddd497728ce354ad7110d0f350cbec506c5c966402d5294351e6a8",
+    "source_file": "forward_logit_recovery.py"
+  },
+  "e2_static_provenance_patch": {
+    "sha256": "e1062bf75e62555fbbe2ba756c62971b6dbc21f5cc768e6d2be5085e4f60318a",
+    "source_file": "run_static_baselines.py"
+  },
+  "e5a_evaluate_unit": {
+    "sha256": "4aeaa199594c882914a616a84b38683c7cdecbec6980ec491d8ff8e6adcdb7c8",
+    "source_file": "evaluate_unit.py"
+  },
+  "e5b_stage_a": {
+    "sha256": "0e59e429afb566fa85f9343882ec2439ee74d4466e5c135d12d793a9b2db9c80",
+    "source_file": "stage_a_unit.py"
+  },
+  "e5b_bench_process": {
+    "sha256": "88bab548f7fd2c1a2db172fa5080f9c5a1785f299ccfb849c345332c89cbd6a0",
+    "source_file": "bench_process.py"
+  }
+}

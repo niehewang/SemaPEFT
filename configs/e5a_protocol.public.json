@@ -1,0 +1,73 @@
+{
+  "experiment_id": "TIFS_C4_SEMAPEFT_E5A_NUMERICAL_CLOSURE_v1",
+  "targets": [
+    "X12",
+    "X17",
+    "G05"
+  ],
+  "accepted_e3_state": {
+    "PASS_E3_REPETITIONS": true,
+    "PASS_E3_MEMORY": true,
+    "PASS_E3_SCALING": true,
+    "PASS_E3_CORRECTNESS": false,
+    "PASS_E3_NO_CHERRYPICK": true,
+    "status": "E3_PARTIAL_GATE_FAILURE_CLOSED_UNCHANGED"
+  },
+  "dimension_grid": [
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "rank_grid": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "module_count_grid": [
+    1,
+    8,
+    32,
+    128
+  ],
+  "module_count_setting": {
+    "d": 1024,
+    "r": 8
+  },
+  "process_seeds": [
+    11,
+    23,
+    47,
+    71,
+    89
+  ],
+  "routes": {
+    "R1_LR32": "E3 exact low-rank QR/core on original float32 inputs, compute float32",
+    "R2_Dense32": "E3 dense materialization on original float32 inputs, compute float32",
+    "R3_LR64": "exact same E3 float32 factor values upcast to float64 before low-rank computation",
+    "R4_Dense64": "exact same E3 float32 factor values upcast to float64 before dense materialization; primary reference"
+  },
+  "primary_reference": "R4_Dense64",
+  "high_precision_rel_tolerance": 1e-10,
+  "high_precision_tolerance_predeclared_reason": "paper-side suggested starting point; fixed before any E5A computation and unchanged by outcomes",
+  "e3_reproduction_rel_tolerance": 5e-07,
+  "float32_new_threshold_selected": false,
+  "device": "cuda:0",
+  "storage_input_dtype": "float32",
+  "compute_dtypes": {
+    "R1_LR32": "float32",
+    "R2_Dense32": "float32",
+    "R3_LR64": "float64",
+    "R4_Dense64": "float64"
+  },
+  "package_aggregation": "same E3 block-diagonal aggregation: Frobenius squares sum across modules; spectral norm is maximum module spectral norm",
+  "dense64_feasibility": {
+    "memory_precheck_fraction_of_free": 0.7,
+    "rule": "if estimated live dense64 tensors exceed 70% of currently free device memory, record DENSE64_NOT_FEASIBLE_MEMORY_PRECHECK; no empirical accuracy threshold change"
+  },
+  "timing_repetitions_required": false,
+  "stop_after_e5a": true,
+  "confirmatory_systems_authorized": false
+}
