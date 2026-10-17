@@ -4,10 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "semapeft"
-version = "0.1.0"
+version = "1.0.0"
 description = "Cross-runtime semantic-integrity verification for PEFT adapters"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "SemaPEFT Authors"}]
+keywords = ["PEFT", "LoRA", "model security", "semantic integrity", "runtime verification"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 dependencies = [
   "numpy>=1.24",
   "torch>=2.3",
@@ -16,6 +27,12 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest>=8"]
+dev = ["pytest>=8", "build>=1.2"]
+
+[project.urls]
+Homepage = "https://github.com/niehewang/SemaPEFT"
+Repository = "https://github.com/niehewang/SemaPEFT"
+Issues = "https://github.com/niehewang/SemaPEFT/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

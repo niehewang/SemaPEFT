@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use SemaPEFT in academic work, please cite this software and the associated paper."
+title: "SemaPEFT: Same Artifact, Different Model"
+type: software
+version: 1.0.0
+date-released: 2026-10-17
+authors:
+  - name: "SemaPEFT Authors"
+repository-code: "https://github.com/niehewang/SemaPEFT"
+url: "https://github.com/niehewang/SemaPEFT"
+license: Apache-2.0
+keywords:
+  - PEFT
+  - LoRA
+  - model security
+  - semantic integrity
+  - runtime verification
+  - vLLM
+  - SGLang

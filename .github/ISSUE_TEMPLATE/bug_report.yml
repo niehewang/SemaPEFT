@@ -1,0 +1,50 @@
+name: Bug or reproducibility report
+description: Report a correctness, runtime-semantic, numerical, or reproducibility problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please avoid including secrets, private model artifacts, or embargoed data."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Include the smallest command/config needed to reproduce the issue.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: SemaPEFT version or commit
+      placeholder: v1.0.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Python, PyTorch, device, runtime version, and source hash when applicable.
+    validations:
+      required: true
+  - type: dropdown
+    id: semantic_scope
+    attributes:
+      label: Affected area
+      options:
+        - Reference PEFT semantics
+        - Runtime semantic extraction
+        - Certificate computation
+        - Repair/lowering
+        - Numerical closure
+        - Systems aggregation
+        - Documentation/packaging
+    validations:
+      required: true

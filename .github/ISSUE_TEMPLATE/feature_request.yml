@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose a runtime, semantic class, certificate improvement, or reproducibility enhancement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What concrete limitation or workflow would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the API/behavior and how semantic correctness would be validated.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant evidence or runtime versions
+      description: Include runtime/source versions, papers, or reproducible examples when applicable.

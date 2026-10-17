@@ -1,5 +1,7 @@
 # Notice
 
-This repository is a research-code release. No third-party model weights, datasets, or serving-runtime source trees are redistributed here. Those components remain subject to their original licenses and terms.
+Copyright 2026 SemaPEFT Authors.
 
-A project license will be added with the final publication release. Until then, no additional license grant is implied by the absence of a `LICENSE` file.
+SemaPEFT is distributed under the Apache License 2.0. See [`LICENSE`](LICENSE).
+
+This repository does not redistribute third-party model weights, datasets, or serving-runtime source trees. Those components remain subject to their original licenses and terms. Names such as PEFT, vLLM, SGLang, PyTorch, NumPy, safetensors, and Hugging Face are used only to identify interoperating software and do not imply endorsement.

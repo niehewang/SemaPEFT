@@ -7,4 +7,4 @@ __all__ = [
     "lora_scale", "canonical_adapter_base", "load_lora_pairs", "operator_map_reference", "operator_gap",
     "lower_adapter_to_scale", "drop_undeclared_tensors",
 ]
-__version__ = "0.1.0"
+__version__ = "1.0.0"

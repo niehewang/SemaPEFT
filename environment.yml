@@ -1,0 +1,11 @@
+name: semapeft
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - numpy>=1.24
+      - torch>=2.3
+      - safetensors>=0.4
+      - pytest>=8

@@ -1,5 +1,12 @@
 # SemaPEFT
 
+[![CI](https://github.com/niehewang/SemaPEFT/actions/workflows/ci.yml/badge.svg)](https://github.com/niehewang/SemaPEFT/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg)](pyproject.toml)
+
+**Release:** v1.0.0 · **License:** Apache-2.0 · **Status:** submission-ready research release
+
+
 **Same Artifact, Different Model: Verifying Cross-Runtime Semantic Integrity of PEFT Adapters**
 
 Reference implementation and reproducibility code for **SemaPEFT**, a framework for verifying that a parameter-efficient fine-tuning (PEFT) adapter preserves its intended execution semantics across deployment runtimes.
@@ -130,7 +137,11 @@ SemaPEFT/
 
 ## Citation
 
-The paper citation will be added after publication. If you use the code before then, please cite the repository and the paper title above.
+If you use SemaPEFT, please cite the software using [`CITATION.cff`](CITATION.cff). GitHub will render the citation metadata automatically once the repository is public. When a paper DOI or preprint identifier is available, the preferred paper citation can be added without changing the software release.
+
+## License
+
+SemaPEFT is released under the [Apache License 2.0](LICENSE). Third-party models, datasets, adapters, and runtime source trees are not redistributed by this repository and remain subject to their original terms.
 
 ## Acknowledgements
 
