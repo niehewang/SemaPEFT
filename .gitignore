@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.DS_Store
+*.log
+work/
+outputs/
+checkpoints/
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.npz
+!results/*.csv

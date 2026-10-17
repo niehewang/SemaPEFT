@@ -1,0 +1,57 @@
+{
+  "scope": "Compact validated summaries only; raw experiment returns are not redistributed in the public code tree.",
+  "runtime_semantics": {
+    "status": "PASS",
+    "supported_profiles": [
+      "vLLM 0.30/0.31",
+      "SGLang 0.5.20/0.5.21"
+    ],
+    "public_subset": {
+      "conformant": 9,
+      "mismatch": 1,
+      "unknown_engineering": 2
+    }
+  },
+  "application_impact": {
+    "status": "PASS",
+    "reference_auroc": 0.9516231,
+    "s2_runtime_auroc": 0.9249193,
+    "s3_runtime_auroc": 0.8656459,
+    "exact_lowering_metric_gap": 0.0
+  },
+  "non_scale": {
+    "status": "PASS",
+    "candidate_rows": 72,
+    "non_scale_mismatch_rows": 36,
+    "repair_success": "36/36",
+    "post_repair_operator_gap": 0.0
+  },
+  "benchmark": {
+    "status": "PASS_PROVENANCE_CLOSED",
+    "primary_rows": 99,
+    "semapeft_typed_accuracy": 1.0,
+    "semapeft_sound_coverage": 0.969697,
+    "scale_only_non_scale_recall": 0.0
+  },
+  "numerical_closure": {
+    "status": "PASS",
+    "units": 125,
+    "tolerance": 1e-10,
+    "max_lr64_dense64_frobenius_disagreement": 1.8835329242293373e-12,
+    "max_lr64_dense64_spectral_disagreement": 5.500576500110039e-13
+  },
+  "stable_systems": {
+    "status": "PASS",
+    "profile": "P64",
+    "r8_speedups": {
+      "d256": 44.132172561773366,
+      "d512": 136.00503871002323,
+      "d1024": 476.2024027104344,
+      "d2048": 1725.6433596835573,
+      "d4096": 8281.374657789618
+    },
+    "real_anchor_speedup": 1333.6154907345585,
+    "real_anchor_measured_peak_working_ratio": 54.08554241435563,
+    "single_machine_note": "Certificate-computation evidence on one NVIDIA A800 80GB system; not end-to-end inference speedup."
+  }
+}
