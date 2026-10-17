@@ -66,11 +66,7 @@ python experiments/quickstart_certificate.py
 SemaPEFT can execute the relevant LoRA loader classes/functions from a **local pinned runtime source tree** while isolating unrelated serving initialization:
 
 ```bash
-python experiments/probe_runtime_semantics.py \
-  --runtime vllm \
-  --version 0.31.0 \
-  --runtime-source /path/to/vllm-0.31.0-source \
-  --adapter /path/to/peft-adapter
+python experiments/probe_runtime_semantics.py   --runtime vllm   --version 0.31.0   --runtime-source /path/to/vllm-0.31.0-source   --adapter /path/to/peft-adapter
 ```
 
 SGLang is supported analogously with `--runtime sglang`.
@@ -80,18 +76,13 @@ SGLang is supported analogously with `--runtime sglang`.
 Exact scale lowering:
 
 ```bash
-python experiments/lower_adapter.py \
-  --adapter /path/to/input_adapter \
-  --output /path/to/lowered_adapter \
-  --target-scale 2.0
+python experiments/lower_adapter.py   --adapter /path/to/input_adapter   --output /path/to/lowered_adapter   --target-scale 2.0
 ```
 
 Drop undeclared serialized LoRA tensors:
 
 ```bash
-python experiments/drop_undeclared_tensors.py \
-  --adapter /path/to/input_adapter \
-  --output /path/to/repaired_adapter
+python experiments/drop_undeclared_tensors.py   --adapter /path/to/input_adapter   --output /path/to/repaired_adapter
 ```
 
 Every repair should be followed by runtime loaded-state extraction and re-certification.
