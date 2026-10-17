@@ -1,6 +1,6 @@
 # Notice
 
-Copyright 2026 SemaPEFT Authors.
+Copyright 2026 Hewang Nie, Jue Xiao, Zhi Lu, Renfei Shen, and Zhenjun Tang.
 
 SemaPEFT is distributed under the Apache License 2.0. See [`LICENSE`](LICENSE).
 

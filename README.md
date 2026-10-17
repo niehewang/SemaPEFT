@@ -9,6 +9,8 @@
 
 **Same Artifact, Different Model: Verifying Cross-Runtime Semantic Integrity of PEFT Adapters**
 
+**Authors:** Hewang Nie, Jue Xiao, Zhi Lu, Renfei Shen, Zhenjun Tang
+
 Reference implementation and reproducibility code for **SemaPEFT**, a framework for verifying that a parameter-efficient fine-tuning (PEFT) adapter preserves its intended execution semantics across deployment runtimes.
 
 ## Why SemaPEFT?

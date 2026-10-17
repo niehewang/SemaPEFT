@@ -5,7 +5,16 @@ type: software
 version: 1.0.0
 date-released: 2026-10-17
 authors:
-  - name: "SemaPEFT Authors"
+  - given-names: "Hewang"
+    family-names: "Nie"
+  - given-names: "Jue"
+    family-names: "Xiao"
+  - given-names: "Zhi"
+    family-names: "Lu"
+  - given-names: "Renfei"
+    family-names: "Shen"
+  - given-names: "Zhenjun"
+    family-names: "Tang"
 repository-code: "https://github.com/niehewang/SemaPEFT"
 url: "https://github.com/niehewang/SemaPEFT"
 license: Apache-2.0
