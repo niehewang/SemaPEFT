@@ -7,7 +7,7 @@
 **Release:** v1.0.0 · **License:** Apache-2.0 · **Status:** submission-ready research release
 
 
-**Same Artifact, Different Model: Verifying Cross-Runtime Semantic Integrity of PEFT Adapters**
+**From Artifact Identity to Execution Semantics: Cross-Runtime Integrity Verification for Low-Rank PEFT Adapters**
 
 **Authors:** Hewang Nie, Jue Xiao, Zhi Lu, Renfei Shen, Zhenjun Tang
 
