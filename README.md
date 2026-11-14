@@ -3,8 +3,12 @@
 [![CI](https://github.com/niehewang/SemaPEFT/actions/workflows/ci.yml/badge.svg)](https://github.com/niehewang/SemaPEFT/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg)](pyproject.toml)
+[![Research Code](https://img.shields.io/badge/research-code-2ea44f.svg)](#)
+[![Reproducibility](https://img.shields.io/badge/reproducibility-validated-6f42c1.svg)](docs/reproducibility.md)
+[![Citation](https://img.shields.io/badge/citation-CFF-4c1.svg)](CITATION.cff)
+[![Security Policy](https://img.shields.io/badge/security-policy-informational.svg)](SECURITY.md)
 
-**Release:** v1.0.0 · **License:** Apache-2.0 · **Status:** submission-ready research release
+**Release:** v1.0.0 · **License:** Apache-2.0 · **Status:** research code release
 
 
 **From Artifact Identity to Execution Semantics: Cross-Runtime Integrity Verification for Low-Rank PEFT Adapters**
